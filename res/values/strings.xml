@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">glassm</string>
+
+    <string name="say_yes">嫁！</string>
+    <string name="say_yes2">嫁~</string>
+    <string name="say_yes3">嫁吧</string>
+
+    <string name="app_title">glass m</string>
+</resources>
