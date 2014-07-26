@@ -18,7 +18,7 @@ import com.google.android.glass.touchpad.GestureDetector;
 /**
  * Created by yowenlove on 14-7-25.
  */
-public class MainActivity extends Activity {
+public class GlassMainActivity extends Activity {
 
     private Handler mHandler = new Handler();
 
