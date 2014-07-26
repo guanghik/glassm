@@ -2,7 +2,9 @@ package com.yowenlove.mobile.glassm;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.media.AudioManager;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.Menu;
@@ -22,6 +24,7 @@ public class MainActivity extends Activity {
 
     private AudioManager mAudioManager;
     private GestureDetector mGestureDetector;
+    private MediaPlayer music;
 
     /**
      * Listener that displays the options menu when the touchpad is tapped.
@@ -48,6 +51,24 @@ public class MainActivity extends Activity {
 
         mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
         mGestureDetector = new GestureDetector(this).setBaseListener(mBaseListener);
+
+        music = MediaPlayer.create(this, R.raw.music);
+        music.setLooping(true);
+        music.start();
+
+    }
+
+    @Override
+    protected void onDestroy() {
+        if (music != null) {
+            if (music.isPlaying()) {
+                music.stop();
+            }
+
+            music.release();
+        }
+
+        super.onDestroy();
     }
 
     @Override
@@ -86,7 +107,7 @@ public class MainActivity extends Activity {
 
 
     private void flower() {
-
+        startActivity(new Intent(this, ARPreviewActivity.class));
     }
 
     private void oops() {

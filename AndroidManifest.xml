@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.yowenlove.mobile.glassm">
+
     <uses-sdk
             android:minSdkVersion="19"
             android:targetSdkVersion="19"
@@ -8,6 +9,12 @@
 
     <uses-permission
             android:name="com.google.android.glass.permission.DEVELOPMENT"/>
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
 
     <application
             android:allowBackup="true"
@@ -24,6 +31,8 @@
                     android:resource="@xml/voice_trigger_glass_m"
                     />
         </activity>
+
+        <activity android:name=".ARPreviewActivity"/>
 
     </application>
 </manifest>
