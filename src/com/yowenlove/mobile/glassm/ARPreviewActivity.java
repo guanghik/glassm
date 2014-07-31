@@ -3,6 +3,7 @@ package com.yowenlove.mobile.glassm;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
+import com.yowenlove.mobile.glassm.graphics.LightingRenderer;
 import com.yowenlove.mobile.glassm.graphics.Model3D;
 import com.yowenlove.mobile.glassm.models.Model;
 import com.yowenlove.mobile.glassm.parser.ObjParser;
@@ -12,7 +13,6 @@ import com.yowenlove.mobile.glassm.util.BaseFileUtil;
 import edu.dhbw.andar.ARToolkit;
 import edu.dhbw.andar.AndARActivity;
 import edu.dhbw.andar.exceptions.AndARException;
-import edu.dhbw.andar.pub.CustomRenderer;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -28,12 +28,12 @@ public class ARPreviewActivity extends AndARActivity {
     public void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        CustomRenderer renderer = new CustomRenderer();//optional, may be set to null
-        super.setNonARRenderer(renderer);//or might be omited
+//        super.setNonARRenderer(new CustomRenderer());//optional, may be set to null
+        super.setNonARRenderer(new LightingRenderer());//or might be omited
 
         //register a object for each marker type
         artoolkit = super.getArtoolkit();
-        new ModelLoader().execute("superman");
+        new ModelLoader().execute("rose");
     }
 
     /**

@@ -52,9 +52,11 @@ public class GlassMainActivity extends Activity {
         mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
         mGestureDetector = new GestureDetector(this).setBaseListener(mBaseListener);
 
-        music = MediaPlayer.create(this, R.raw.music);
-        music.setLooping(true);
-        music.start();
+//        music = MediaPlayer.create(this, R.raw.music);
+        if (music != null) {
+            music.setLooping(true);
+            music.start();
+        }
 
     }
 
