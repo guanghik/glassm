@@ -17,7 +17,7 @@
     along with AndObjViewer.  If not, see <http://www.gnu.org/licenses/>.
  
  */
-package com.yowenlove.mobile.glassm.models;
+package com.yowenlove.mobile.glassm.ar.models;
 
 import java.io.Serializable;
 

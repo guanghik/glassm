@@ -17,10 +17,10 @@
  along with AndObjViewer.  If not, see <http://www.gnu.org/licenses/>.
 
  */
-package com.yowenlove.mobile.glassm.models;
+package com.yowenlove.mobile.glassm.ar.models;
 
 
-import com.yowenlove.mobile.glassm.util.BaseFileUtil;
+import com.yowenlove.mobile.glassm.ar.util.BaseFileUtil;
 
 import java.io.Serializable;
 import java.util.HashMap;

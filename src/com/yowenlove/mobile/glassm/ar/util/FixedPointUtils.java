@@ -1,4 +1,4 @@
-package com.yowenlove.mobile.glassm.util;
+package com.yowenlove.mobile.glassm.ar.util;
 
 // Much of this is adapted from the beartronics FP lib
 public class FixedPointUtils {

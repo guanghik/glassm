@@ -17,13 +17,13 @@
  along with AndObjViewer.  If not, see <http://www.gnu.org/licenses/>.
 
  */
-package com.yowenlove.mobile.glassm.graphics;
+package com.yowenlove.mobile.glassm.ar.graphics;
 
 import android.opengl.GLUtils;
 import android.util.Log;
-import com.yowenlove.mobile.glassm.models.Group;
-import com.yowenlove.mobile.glassm.models.Material;
-import com.yowenlove.mobile.glassm.models.Model;
+import com.yowenlove.mobile.glassm.ar.models.Group;
+import com.yowenlove.mobile.glassm.ar.models.Material;
+import com.yowenlove.mobile.glassm.ar.models.Model;
 import edu.dhbw.andar.ARObject;
 
 import javax.microedition.khronos.opengles.GL10;

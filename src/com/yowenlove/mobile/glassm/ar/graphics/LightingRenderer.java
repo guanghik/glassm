@@ -1,4 +1,4 @@
-package com.yowenlove.mobile.glassm.graphics;
+package com.yowenlove.mobile.glassm.ar.graphics;
 
 import edu.dhbw.andar.interfaces.OpenGLRenderer;
 import edu.dhbw.andar.util.GraphicsUtil;

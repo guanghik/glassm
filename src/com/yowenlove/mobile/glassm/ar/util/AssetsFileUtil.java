@@ -1,4 +1,4 @@
-package com.yowenlove.mobile.glassm.util;
+package com.yowenlove.mobile.glassm.ar.util;
 
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;

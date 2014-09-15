@@ -17,7 +17,7 @@
     along with AndObjViewer.  If not, see <http://www.gnu.org/licenses/>.
  
  */
-package com.yowenlove.mobile.glassm.parser;
+package com.yowenlove.mobile.glassm.ar.parser;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

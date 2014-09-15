@@ -1,4 +1,4 @@
-package com.yowenlove.mobile.glassm.parser;
+package com.yowenlove.mobile.glassm.ar.parser;
 
 public class SimpleTokenizer {
 	String str = "";

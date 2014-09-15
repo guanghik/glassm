@@ -17,7 +17,7 @@
     along with AndObjViewer.  If not, see <http://www.gnu.org/licenses/>.
  
  */
-package com.yowenlove.mobile.glassm.parser;
+package com.yowenlove.mobile.glassm.ar.parser;
 
 public class ParseException extends Exception {
 	public ParseException(String file,int lineNumber, String msg) {
